@@ -2,13 +2,12 @@
 
 ## 📋 项目简介
 
-GIDDM是一个基于深度学习的高光谱图像域适应项目，旨在解决不同域之间的数据分布差异问题，提高模型在目标域上的泛化性能。
+这是论文GIDDM的实现：
+GIDDM: Generating Labels with Diffusion Model to Promote Cross-domain Open-set Image Recognition
 
 ## ✨ 主要特性
 
-- 🚀 支持多种高光谱数据集（Houston、Pavia、KSC等）
-- 🔧 提供多种网络架构选择（ResNet50、Cc2Net87、DCRN_02等）
-- 📊 实现多种域适应算法（GIDDM、cGIDDM等）
+- 🚀 支持多种高光谱数据集（Houston、Pavia等
 - 🎯 针对高光谱图像特点优化的数据处理流程
 - 📈 完整的训练和评估框架
 
@@ -85,23 +84,7 @@ python train-Pavia.py
 |------|------|--------|
 | `--dataset` | 数据集名称 | Houston, Pavia |
 | `--target_domain` | 目标域名称 | Houston18, paviaU |
-| `--seed` | 随机种子 | 42 |
 
-#### 🧠 模型级参数
-| 参数 | 说明 | 示例值 |
-|------|------|--------|
-| `--model` | 模型类型 | GIDDM, cGIDDM |
-| `--net` | 网络架构 | resnet50, Cc2Net87, DCRN_02 |
-| `--bottle_neck_dim` | 瓶颈层维度 | 256 |
-| `--patches` | 图像块大小 | 7 |
-
-#### ⚙️ 训练级参数
-| 参数 | 说明 | 示例值 |
-|------|------|--------|
-| `--batch_size` | 批次大小 | 256 |
-| `--lr` | 学习率 | 0.001 |
-| `--training_iter` | 训练迭代次数 | 10000 |
-| `--warmup_iter` | 预热迭代次数 | 1000 |
 
 ### 训练示例
 
@@ -114,38 +97,10 @@ python train-Pavia.py
 python train_HS.py
 ```
 
-#### 🔧 自定义参数训练
-
-##### Houston数据集
-```bash
-python train_HS.py \
-    --dataset Houston \
-    --source_domain Houston13 \
-    --target_domain Houston18 \
-    --batch_size 256 \
-    --lr 0.001
-```
-
-##### Pavia数据集
-```bash
-python train-Pavia.py \
-    --dataset Pavia \
-    --source_domain paviaC \
-    --target_domain paviaU \
-    --batch_size 256 \
-    --lr 0.001
-```
 
 ### 🔄 模型训练流程
 
 ```mermaid
-graph TD
-    A[数据加载] --> B[数据预处理]
-    B --> C[模型构建]
-    C --> D[训练初始化]
-    D --> E[模型训练]
-    E --> F[结果保存]
-```
 
 1. **📥 数据加载**: 从指定路径加载源域和目标域数据
 2. **🔧 数据预处理**: 进行标签映射和数据增强
@@ -192,21 +147,12 @@ GIDDM/
 
 本项目采用MIT许可证，详见LICENSE文件。
 
-## 🤝 贡献
-
-欢迎提交Issue和Pull Request来改进项目！
-
-- 🐛 报告Bug
-- 💡 提出新功能建议
-- 📝 改进文档
-- 🔧 贡献代码
 
 ## 📞 联系方式
 
 如有问题，请通过以下方式联系：
 
 - 📧 邮箱：[wanghaoyucumt@163.com]
-- 🐙 GitHub Issues：[项目地址]/issues
 
 ---
 
