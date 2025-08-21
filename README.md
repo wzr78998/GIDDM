@@ -1,6 +1,4 @@
-好的，这是为您优化排版后的内容。主要通过调整间距、增加分割线和优化对齐，使得整体结构更清晰、更具可读性。
 
----
 
 # GIDDM: Generating Labels with Diffusion Model to Promote Cross-domain Open-set Image Recognition
 
