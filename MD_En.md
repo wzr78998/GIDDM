@@ -1,5 +1,5 @@
 
-**GIDDM: Generating Labels with Diffusion Model to Promote Cross-domain Open-set Image Recognition**
+# GIDDM: Generating Labels with Diffusion Model to Promote Cross-domain Open-set Image Recognition
 
 ## ✨ Main Features
 
