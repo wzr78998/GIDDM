@@ -53,6 +53,8 @@ pip install -r requirements.txt
 ---
 
 ## 📚 数据集准备 (Dataset Preparation)
+数据集可以在此处获得： https://pan.baidu.com/s/1WHzeZkE1zhG8M-54gdyW6A  code: 6az7 
+
 
 ### 支持的数据集 (Supported Datasets)
 
