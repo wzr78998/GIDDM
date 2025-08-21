@@ -100,7 +100,6 @@ python train_HS.py
 
 ### 🔄 Model Training Workflow  
 
-```mermaid
 1. **📥 Data Loading**: Load source domain and target domain data from the specified path  
 2. **🔧 Data Preprocessing**: Perform label mapping and data augmentation  
 3. **🏗️ Model Construction**: Initialize the GIDDM model  
